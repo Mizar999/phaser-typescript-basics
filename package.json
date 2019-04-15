@@ -1,0 +1,31 @@
+{
+  "name": "starfall",
+  "version": "0.1.0",
+  "description": "Starfall game by freeCodeCamp",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack",
+    "watch": "webpack --watch",
+    "serve": "live-server --port=8085"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Mizar999/phaser-typescript-basics.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Mizar999/phaser-typescript-basics/issues"
+  },
+  "homepage": "https://github.com/Mizar999/phaser-typescript-basics#readme",
+  "devDependencies": {
+    "live-server": "^1.2.1",
+    "npm-run-all": "^4.1.5",
+    "phaser": "^3.16.2",
+    "ts-loader": "^5.3.3",
+    "typescript": "^3.4.3",
+    "webpack": "^4.30.0",
+    "webpack-cli": "^3.3.0"
+  }
+}
