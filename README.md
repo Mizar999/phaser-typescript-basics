@@ -74,6 +74,9 @@ Simple game with Phaser 3 & TypeScript
 - To run multiple npm scripts cross platform in parallel run the following command (use the **npx** command if the packages were installed locally):
 
     ```powershell
+    # if globally installed
     npm-run-all --parallel watch serve
+
+    # if locally installed
     npx npm-run-all --parallel watch serve
     ```
