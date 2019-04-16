@@ -80,3 +80,13 @@ Simple game with Phaser 3 & TypeScript
     # if locally installed
     npx npm-run-all --parallel watch serve
     ```
+
+- Or use the shorthand command **run-p** for parallel tasks:
+
+    ```powershell
+    # if globally installed
+    run-p watch serve
+
+    # if locally installed
+    npx run-p watch serve
+    ```

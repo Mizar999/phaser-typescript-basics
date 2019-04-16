@@ -88,11 +88,12 @@ export class GameScene extends Phaser.Scene {
             }, [star], this);
         }
     }
-
+    
     private onFall(star: Phaser.Physics.Arcade.Image): () => void {
         return function() {
             star.setTint(0xff0000);
             this.starsFallen += 1;
+            // Destroy the star after some milliseconds
             this.time.delayedCall(100, function(star) {
                 star.destroy();
             }, [star], this);
