@@ -5,6 +5,7 @@ export class GameScene extends Phaser.Scene {
     lastStarTime: number;
     starsCaught: number;
     starsFallen: number;
+    maximumStarsFallen: number;
     sand: Phaser.Physics.Arcade.StaticGroup;
     info: Phaser.GameObjects.Text;
 
@@ -24,6 +25,7 @@ export class GameScene extends Phaser.Scene {
         this.lastStarTime = 0;
         this.starsCaught = 0;
         this.starsFallen = 0;
+        this.maximumStarsFallen = 3;
     }
 
     /**
@@ -74,7 +76,7 @@ export class GameScene extends Phaser.Scene {
             this.emitStar();
         }
 
-        this.info.text = `${this.starsCaught} caught - ${this.starsFallen} fallen (max 3)`;
+        this.info.text = `${this.starsCaught} caught - ${this.starsFallen} fallen (max ${this.maximumStarsFallen})`;
     }
 
     private onClick(star: Phaser.Physics.Arcade.Image): () => void {
@@ -96,6 +98,9 @@ export class GameScene extends Phaser.Scene {
             // Destroy the star after some milliseconds
             this.time.delayedCall(100, function(star) {
                 star.destroy();
+                if (this.starsFallen >= this.maximumStarsFallen) {
+                    this.scene.start("ScoreScene", {starsCaught: this.starsCaught});
+                }
             }, [star], this);
         }
     }
