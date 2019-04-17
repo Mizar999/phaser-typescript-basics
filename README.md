@@ -5,6 +5,7 @@ Simple game with Phaser 3 & TypeScript
 ## Links
 
 - Source: [How to build a simple game in the browser with Phaser 3 and TypeScript](https://medium.freecodecamp.org/how-to-build-a-simple-game-in-the-browser-with-phaser-3-and-typescript-bdc94719135)
+- [Create a Phaser 3 plugin](https://gamedevacademy.org/create-a-dialog-modal-plugin-in-phaser-3-part-1/)
 
 ## Project setup
 
