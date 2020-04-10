@@ -4,7 +4,7 @@ A simple game with Phaser 3 & TypeScript.
 
 ## Resources
 
-- [How to build a simple game in the browser with Phaser 3 and TypeScript](https://medium.freecodecamp.org/how-to-build-a-simple-game-in-the-browser-with-phaser-3-and-typescript-bdc94719135) by Mariya Davydova [@mariyadavydova](https://medium.freecodecamp.org/@mariyadavydova)
+- [How to build a simple game in the browser with Phaser 3 and TypeScript](https://medium.freecodecamp.org/how-to-build-a-simple-game-in-the-browser-with-phaser-3-and-typescript-bdc94719135) by Mariya Davydova [@mariyadavydova](https://www.freecodecamp.org/news/author/mariya/)
 
 ## Project setup
 
@@ -54,7 +54,7 @@ A simple game with Phaser 3 & TypeScript.
     }
     ```
 
-- Download the [Phaser 3 definitions](https://github.com/photonstorm/phaser3-docs/tree/master/typescript) into the `src` subdirectory (`src/phaser.d.ts`)
+- Download the [Phaser 3 definitions](https://github.com/photonstorm/phaser/tree/master/types) into the `src` subdirectory (`src/phaser.d.ts`)
 - Update the **scripts**-section of the `package.json` file:
 
     ```json
