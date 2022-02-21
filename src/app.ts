@@ -1,9 +1,9 @@
-import "phaser";
 import {WelcomeScene} from "./welcome-scene";
 import {GameScene} from "./game-scene";
 import {ScoreScene} from "./score-scene";
+import {Types, Game} from "phaser";
 
-const config: GameConfig = {
+const config: Types.Core.GameConfig = {
     title: "Starfall",
     width: 800,
     height: 600,
@@ -12,14 +12,14 @@ const config: GameConfig = {
     physics: {
         default: "arcade",
         arcade: {
-            debug: false
+            debug: false,
         }
     },
     backgroundColor: "#000033"
 };
 
-export class StarfallGame extends Phaser.Game {
-    constructor(config: GameConfig) {
+export class StarfallGame extends Game {
+    constructor(config: Types.Core.GameConfig) {
         super(config);
     }
 }
