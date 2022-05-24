@@ -61,7 +61,7 @@ A simple game with Phaser 3 & TypeScript.
     "scripts": {
         "build": "webpack",
         "watch": "webpack --watch",
-        "serve": "http-server --port=8085"
+        "serve": "http-server --port=8085 -c-1"
     }
     ```
 
