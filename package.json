@@ -25,6 +25,7 @@
     "phaser": "^3.55.2",
     "picomatch": "~2.3.2",
     "serialize-javascript": "~7.0.5",
+    "shell-quote": "^1.8.4",
     "ts-loader": "^9.4.2",
     "typescript": "^4.9.4",
     "webpack": "^5.104.0",
